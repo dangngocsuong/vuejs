@@ -1,0 +1,70 @@
+@import './base.css';
+
+#app {
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    color: #2c3e50;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .primary,
+  main .sidebar {
+    min-height: calc(100vh - 220px);
+  }
+}
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  text-decoration: none;
+  background: transparent;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+main {
+  display: flex;
+  gap: 30px;
+  margin: 30px 0;
+}
+main .primary {
+  width: 70%;
+  background-color: rgba(126, 102, 80, 0.432);
+}
+main .sidebar {
+  width: 30%;
+  background-color: rgba(87, 109, 107, 0.432);
+}
